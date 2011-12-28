@@ -153,7 +153,7 @@ public class MavenUrlPollerMojo extends AbstractMojo {
 			}
 		}
 
-		if (!failOnFailure) {
+		if (failOnFailure) {
 			// If ever retCode is more than 1, it means error(s) have occurred
 			if (retCode > 0) {
 				throw new MojoFailureException(
