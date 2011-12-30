@@ -22,9 +22,9 @@ import org.apache.maven.plugin.MojoFailureException;
 /**
  * Goal which polls a given URL for a HTTP status code
  * 
- * @goal pre-integration-test
+ * @goal poll
  * 
- * @phase poll
+ * @phase pre-integration-test
  */
 public class MavenUrlPollerMojo extends AbstractMojo {
 	/**
